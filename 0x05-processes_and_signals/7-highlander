@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# a Bash script that displays
+# with a sleep 2 in between it iterations
+#then echo i am invincibles
+
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "I am invincible!!!"' SIGTERM
+done
